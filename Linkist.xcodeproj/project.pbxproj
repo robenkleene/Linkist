@@ -11,7 +11,35 @@
 		4568F7A5202AA19100B7EB5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568F7A4202AA19100B7EB5D /* ViewController.swift */; };
 		4568F7A7202AA19100B7EB5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4568F7A6202AA19100B7EB5D /* Assets.xcassets */; };
 		4568F7AA202AA19100B7EB5D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4568F7A8202AA19100B7EB5D /* Main.storyboard */; };
+		4568F7B9202AA1F000B7EB5D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4568F7B8202AA1F000B7EB5D /* Cocoa.framework */; };
+		4568F7BC202AA1F000B7EB5D /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568F7BB202AA1F000B7EB5D /* SourceEditorExtension.swift */; };
+		4568F7BE202AA1F000B7EB5D /* SourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4568F7BD202AA1F000B7EB5D /* SourceEditorCommand.swift */; };
+		4568F7C3202AA1F000B7EB5D /* Linked List.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4568F7B6202AA1EF00B7EB5D /* Linked List.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4568F7C1202AA1F000B7EB5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4568F797202AA19100B7EB5D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4568F7B5202AA1EF00B7EB5D;
+			remoteInfo = "Linked List";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4568F7C7202AA1F000B7EB5D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4568F7C3202AA1F000B7EB5D /* Linked List.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4568F79F202AA19100B7EB5D /* Linkist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linkist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +49,12 @@
 		4568F7A9202AA19100B7EB5D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4568F7AB202AA19100B7EB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4568F7AC202AA19100B7EB5D /* Linkist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Linkist.entitlements; sourceTree = "<group>"; };
+		4568F7B6202AA1EF00B7EB5D /* Linked List.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Linked List.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4568F7B8202AA1F000B7EB5D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		4568F7BB202AA1F000B7EB5D /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		4568F7BD202AA1F000B7EB5D /* SourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorCommand.swift; sourceTree = "<group>"; };
+		4568F7BF202AA1F000B7EB5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4568F7C0202AA1F000B7EB5D /* Linked_List.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Linked_List.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4568F7B3202AA1EF00B7EB5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4568F7B9202AA1F000B7EB5D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -38,6 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				4568F7A1202AA19100B7EB5D /* Linkist */,
+				4568F7BA202AA1F000B7EB5D /* Linked List */,
+				4568F7B7202AA1F000B7EB5D /* Frameworks */,
 				4568F7A0202AA19100B7EB5D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				4568F79F202AA19100B7EB5D /* Linkist.app */,
+				4568F7B6202AA1EF00B7EB5D /* Linked List.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +108,25 @@
 			path = Linkist;
 			sourceTree = "<group>";
 		};
+		4568F7B7202AA1F000B7EB5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4568F7B8202AA1F000B7EB5D /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4568F7BA202AA1F000B7EB5D /* Linked List */ = {
+			isa = PBXGroup;
+			children = (
+				4568F7BB202AA1F000B7EB5D /* SourceEditorExtension.swift */,
+				4568F7BD202AA1F000B7EB5D /* SourceEditorCommand.swift */,
+				4568F7BF202AA1F000B7EB5D /* Info.plist */,
+				4568F7C0202AA1F000B7EB5D /* Linked_List.entitlements */,
+			);
+			path = "Linked List";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -73,15 +137,34 @@
 				4568F79B202AA19100B7EB5D /* Sources */,
 				4568F79C202AA19100B7EB5D /* Frameworks */,
 				4568F79D202AA19100B7EB5D /* Resources */,
+				4568F7C7202AA1F000B7EB5D /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4568F7C2202AA1F000B7EB5D /* PBXTargetDependency */,
 			);
 			name = Linkist;
 			productName = Linkist;
 			productReference = 4568F79F202AA19100B7EB5D /* Linkist.app */;
 			productType = "com.apple.product-type.application";
+		};
+		4568F7B5202AA1EF00B7EB5D /* Linked List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4568F7C4202AA1F000B7EB5D /* Build configuration list for PBXNativeTarget "Linked List" */;
+			buildPhases = (
+				4568F7B2202AA1EF00B7EB5D /* Sources */,
+				4568F7B3202AA1EF00B7EB5D /* Frameworks */,
+				4568F7B4202AA1EF00B7EB5D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Linked List";
+			productName = "Linked List";
+			productReference = 4568F7B6202AA1EF00B7EB5D /* Linked List.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -94,6 +177,10 @@
 				ORGANIZATIONNAME = "Roben Kleene";
 				TargetAttributes = {
 					4568F79E202AA19100B7EB5D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					4568F7B5202AA1EF00B7EB5D = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -113,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				4568F79E202AA19100B7EB5D /* Linkist */,
+				4568F7B5202AA1EF00B7EB5D /* Linked List */,
 			);
 		};
 /* End PBXProject section */
@@ -124,6 +212,13 @@
 			files = (
 				4568F7A7202AA19100B7EB5D /* Assets.xcassets in Resources */,
 				4568F7AA202AA19100B7EB5D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4568F7B4202AA1EF00B7EB5D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +234,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4568F7B2202AA1EF00B7EB5D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4568F7BC202AA1F000B7EB5D /* SourceEditorExtension.swift in Sources */,
+				4568F7BE202AA1F000B7EB5D /* SourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4568F7C2202AA1F000B7EB5D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4568F7B5202AA1EF00B7EB5D /* Linked List */;
+			targetProxy = 4568F7C1202AA1F000B7EB5D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4568F7A8202AA19100B7EB5D /* Main.storyboard */ = {
@@ -262,6 +374,7 @@
 		4568F7B0202AA19100B7EB5D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Linkist/Linkist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -278,6 +391,7 @@
 		4568F7B1202AA19100B7EB5D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Linkist/Linkist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +401,38 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.1percenter.Linkist;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		4568F7C5202AA1F000B7EB5D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Linked List/Linked_List.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZMEAAJZPVP;
+				INFOPLIST_FILE = "Linked List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.1percenter.Linkist.Linked-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		4568F7C6202AA1F000B7EB5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Linked List/Linked_List.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = ZMEAAJZPVP;
+				INFOPLIST_FILE = "Linked List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.1percenter.Linkist.Linked-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -308,6 +454,15 @@
 			buildConfigurations = (
 				4568F7B0202AA19100B7EB5D /* Debug */,
 				4568F7B1202AA19100B7EB5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4568F7C4202AA1F000B7EB5D /* Build configuration list for PBXNativeTarget "Linked List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4568F7C5202AA1F000B7EB5D /* Debug */,
+				4568F7C6202AA1F000B7EB5D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
